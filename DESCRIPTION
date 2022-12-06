@@ -1,0 +1,17 @@
+Package: GPArotateDF
+Version: 2022.12-1
+Title: Derivative Free Gradient Projection Factor Rotation
+Authors@R: c( 
+	person("Coen", "Bernaards", email = "cab.gparotation@gmail.com", role = c("cre")),
+	person("Robert", "Jennrich", role = "aut")
+	)
+Depends: R (>= 2.0.0)
+Description: Derivative Free Gradient Projection Algorithms for Factor Rotation. 
+    See '?GPArotateDF' for more details. See 'citation(package='GPArotateDF')'.
+    Jennrich, R. I. (2004). Derivative free gradient projection algorithms for rotation. 
+    Psychometrika, 69(3), 475-480. 
+    Bernaards, C.A. and Jennrich, R.I. (2005) Gradient Projection Algorithms and
+    Software for Arbitrary Rotation Criteria in Factor Analysis, Educational and
+    Psychological Measurement: 65(5), 676-696.
+Imports: GPArotation
+License: GPL (>= 2) | file LICENSE

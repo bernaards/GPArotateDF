@@ -1,0 +1,1086 @@
+fuzz <- 1e-6 #
+all.ok <- TRUE  #
+  data(ability.cov)#
+  L <- loadings(factanal(factors = 2, covmat=ability.cov))#
+#
+LG <- quartimax(L, normaliz = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize - FALSE, eps=1e-5, method = "quartimax")
+detach("package:GPArotateDF", unload=TRUE)#
+install.packages("/Users/coen/Documents/Personal Research/cran/GPArotateDF_2022.12-1.tar.gz")#
+library(GPArotateDF)
+fuzz <- 1e-6 #
+all.ok <- TRUE  #
+  data(ability.cov)#
+  L <- loadings(factanal(factors = 2, covmat=ability.cov))#
+#
+LG <- quartimax(L, normaliz = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize - FALSE, eps=1e-5, method = "quartimax")
+GPForth.df
+data(ability.cov)#
+  L <- loadings(factanal(factors = 2, covmat=ability.cov))#
+#
+LG <- quartimax(L, normaliz = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "quartimax")
+if( fuzz < max(abs(L$loadings - LGDF$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    print(v, digits=18)#
+    cat("difference:\n")#
+    print(v - tst, digits=18)#
+    all.ok <- FALSE  #
+    }
+L$loadings
+L
+L$loadings
+LGDF
+if( fuzz < max(abs(L- LGDF))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    print(v, digits=18)#
+    cat("difference:\n")#
+    print(v - tst, digits=18)#
+    all.ok <- FALSE  #
+    }
+L - LGDF
+L
+LGDF
+lG
+LG
+LG - LGDF
+unclass(LG)
+unclass(LGDF)
+unclass(LGDF)$loadings
+unclass(LGDF)$loadings - unclass(LG)$loadings
+if( fuzz < max(abs(> unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    print(v, digits=18)#
+    cat("difference:\n")#
+    print(v - tst, digits=18)#
+    all.ok <- FALSE  #
+    }
+if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    print(v, digits=18)#
+    cat("difference:\n")#
+    print(v - tst, digits=18)#
+    all.ok <- FALSE  #
+    }
+max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))
+LG <- quartimax(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "quartimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    print(v, digits=18)#
+    cat("difference:\n")#
+    print(v - tst, digits=18)#
+    all.ok <- FALSE  #
+    }
+unclass(LGDF)$loadings - unclass(LG)$loadings)
+unclass(LGDF)$loadings - unclass(LG)$loadings
+unclass(LGDF)$loadings
+unclass(LG)$loadings
+LG
+SUMMARY(LG)
+summary(LG)
+summary(LGDF)
+LG$Table
+LGDF$Table
+LG <- quartimax(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "quartimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    print(v, digits=18)#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- quartimax(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "quartimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    print(v, digits=18)#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- quartimax(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "quartimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+quartimax(L, normalize = FALSE, eps=1e-5)
+quartimax(L, normalize = TRUE, eps=1e-5)
+GPForth.df(L, normalize = FALSE, eps=1e-5, method = "quartimax")
+GPForth.df(L, normalize = TRUE, eps=1e-5, method = "quartimax")
+detach("package:GPArotateDF", unload=TRUE)#
+install.packages("/Users/coen/Documents/Personal Research/cran/GPArotateDF_2022.12-1.tar.gz")#
+library(GPArotateDF)
+GPForth.df(L, normalize = TRUE, eps=1e-5, method = "quartimax")
+LG <- varimin(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "varimin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- varimin(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "varimin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- quartimin(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "quartimin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- quartimin(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "quartimin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG
+LGDF
+LG <- quartimin(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "quartimin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- quartimin(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "quartimin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+entropy
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "cf", kappa=2/12)
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "cf", methodArgs=list(kappa=2/12))
+detach("package:GPArotateDF", unload=TRUE)#
+install.packages("/Users/coen/Documents/Personal Research/cran/GPArotateDF_2022.12-1.tar.gz")#
+library(GPArotateDF)
+data(ability.cov)#
+  L <- loadings(factanal(factors = 2, covmat=ability.cov))#
+#
+# quartimax#
+#
+LG <- quartimax(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "quartimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- quartimax(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "quartimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- varimin(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "varimin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- varimin(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "varimin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+# quartimin#
+#
+LG <- quartimin(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "quartimin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- quartimin(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "quartimin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- oblimax(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "oblimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- oblimax(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "oblimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- entropy(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "entropy")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- entropy(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "entropy")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- simplimax(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "simplimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- simplimax(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "simplimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- bentlerQ(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "bentler")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- bentlerQ(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "bentler")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- bentlerQ(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "bentler")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- bentlerQ(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "bentler")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    } #
+# bentlerT#
+#
+LG <- bentlerT(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "bentler")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- bentlerT(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "bentler")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- geominQ(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "geomin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- geominQ(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "geomin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    } #
+# geominT#
+#
+LG <- geominT(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "geomin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- geominT(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "geomin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- infomaxQ(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "infomax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- infomaxQ(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "infomax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- infomaxT(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "infomax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- infomaxT(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "infomax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- cfQ(L, normalize = FALSE, eps=1e-5, kappa=2/12)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "cf", methodArgs=list(kappa=2/12))  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- cfQ(L, normalize = TRUE, eps=1e-5, kappa=2/12)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "cf", methodArgs=list(kappa=2/12))  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- equamax(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "cf", methodArgs=list(kappa=2/12))  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- equamax(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "cf", methodArgs=list(kappa=2/12))  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- infomaxQ(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "infomax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- infomaxQ(L, normalize = TRUE, eps=1e-6)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-6, method = "infomax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- oblimax(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "oblimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- oblimax(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "oblimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- oblimax(L, normalize = FALSE, eps=1e-6)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-6, method = "oblimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- oblimax(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "oblimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- oblimax(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "oblimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- oblimax(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "oblimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- oblimax(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "oblimax")  #
+# Oblimax fails for fuzz = 1e-6. But succeeds for 0.01#
+  if( 0.01 < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- oblimax(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "oblimax")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } 	  #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- varimin(L, normalize = FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "varimin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+LG <- varimin(L, normalize = TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "varimin")  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+detach("package:GPArotateDF", unload=TRUE)#
+install.packages("/Users/coen/Documents/Personal Research/cran/GPArotateDF_2022.12-1.tar.gz")#
+library(GPArotateDF)
+?ff.fss
+?NormalizingWeight
+LG <- targetT(L, Target=matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2), normalize=FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "target", #
+ 	methodArgs=list(Target=matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2),))  #
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "target", #
+ 	methodArgs=list(Target=matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2),))
+matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2)
+LG <- targetT(L, Target=matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2), normalize=FALSE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "target", #
+ 	methodArgs=list(Target=matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2)))
+if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- targetT(L, Target=matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2), normalize=TRUE, eps=1e-5)#
+LGDF <- GPForth.df(L, normalize = TRUE, eps=1e-5, method = "target", #
+ 	methodArgs=list(Target=matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2)))  #
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- targetQ(L, Target=matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2), normalize=FALSE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = FALSE, eps=1e-5, method = "target", #
+ 	methodArgs=list(Target=matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2)))  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LG <- targetQ(L, Target=matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2), normalize=TRUE, eps=1e-5)#
+LGDF <- GPFoblq.df(L, normalize = TRUE, eps=1e-5, method = "target", #
+ 	methodArgs=list(Target=matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2)))  #
+#
+  if( fuzz < max(abs(unclass(LGDF)$loadings - unclass(LG)$loadings))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$loadings - unclass(LG)$loadings), digits=18)#
+    all.ok <- FALSE  #
+    } #
+  if( fuzz < max(abs(unclass(LGDF)$Phi - unclass(LG)$Phi))) {#
+    cat("Calculated value is not the same as test value in test rotations 1. Value:\n")#
+    cat("difference:\n")#
+    print((unclass(LGDF)$Phi - unclass(LG)$Phi), digits=18)#
+    all.ok <- FALSE  #
+    }
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "target", #
+ 	methodArgs=list(W = matrix(c(rep(.4,6),rep(.6,6)), 6,2),#
+           Target= matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2)))
+LG <- pstT(L, W = matrix(c(rep(.4,6),rep(.6,6)), 6,2),#
+           Target= matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2),#
+               normalize = FALSE, maxit=1000, eps=1e-5)
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "pst", #
+ 	methodArgs=list(W = matrix(c(rep(.4,6),rep(.6,6)), 6,2),#
+           Target= matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2)))
+LGDF
+LG
+LGDF$Table
+LG$Table
+tail(LG$Table)
+LG$Table
+tail(LG$Table)
+LGDF$Table
+LG <- pstT(L, W = matrix(c(rep(.4,6),rep(.6,6)), 6,2),#
+           Target= matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2),#
+               normalize = FALSE, maxit=1000, eps=1e-5, randomStarts = 10)
+tail(LG$Table)
+ff.pst
+matrix(c(rep(.4,6),rep(.6,6)), 6,2)
+matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2)
+L
+data(Harman)
+Harman8
+matrix(c(rep(1,3),rep(0,6),rep(1,3)), 6,2)
+matrix(c(rep(1,5),rep(0,8),rep(1,3)), 8,2)
+LG <- pstT(Harman8, W = matrix(c(rep(.4,8),rep(.6,8)), 6,2),#
+           Target= matrix(c(rep(1,5),rep(0,8),rep(1,3)), 8,2),#
+               normalize = FALSE, maxit=1000, eps=1e-5, randomStarts = 10)
+Harman8
+matrix(c(rep(.4,8),rep(.6,8)), 6,2)
+matrix(c(rep(.4,8),rep(.6,8)), 8,2)
+LG <- pstT(Harman8, W = matrix(c(rep(.4,8),rep(.6,8)), 8,2),#
+           Target= matrix(c(rep(1,5),rep(0,8),rep(1,3)), 8,2),#
+               normalize = FALSE, maxit=1000, eps=1e-5, randomStarts = 10)
+LG <- pstT(Harman8, W = matrix(c(rep(.4,8),rep(.6,8)), 8,2),#
+           Target= matrix(c(rep(1,5),rep(0,8),rep(1,3)), 8,2),#
+               normalize = FALSE, maxit=1000, eps=1e-56)
+LG <- pstT(Harman8, W = matrix(c(rep(.4,8),rep(.6,8)), 8,2),#
+           Target= matrix(c(rep(1,5),rep(0,8),rep(1,3)), 8,2),#
+               normalize = FALSE, maxit=1000, eps=1e-5)
+tail(LG$Table)
+LGDF <- GPForth.df(L, normalize = FALSE, eps=1e-5, method = "pst", #
+ 	methodArgs=list(W = matrix(c(rep(.4,8),rep(.6,8)), 8,2),#
+           Target= matrix(c(rep(1,5),rep(0,8),rep(1,3)), 8,2)))
+LGDF <- GPForth.df(Harman8, normalize = FALSE, eps=1e-5, method = "pst", #
+ 	methodArgs=list(W = matrix(c(rep(.4,8),rep(.6,8)), 8,2),#
+           Target= matrix(c(rep(1,5),rep(0,8),rep(1,3)), 8,2)))
+LDGF
+tail(LGDF$Table)
+?GPForth
+quartimax
+cubimax.df <-  function(L, Tmat = diag(ncol(L)), normalize = FALSE, eps = 1e-05, #
+    maxit = 1000){#
+    GPForth.df(L, Tmat = Tmat, method = "cubimax", normalize = normalize, #
+        eps = eps, maxit = maxit)#
+}
+cubimax.df(Harman8)
+quartimax(Harman8)
+summary(quartimax(Harman8))
+summary(cubimax.df(Harman8))
+fa.cubimax <- cubimax(fa.unrotated, normalize = TRUE)
+fa.cubimax <- cubimax.df(fa.unrotated, normalize = TRUE)
+data("WansbeekMeijer", package="GPArotation")#
+  fa.unrotated  <- factanal(factors = 3, covmat=NetherlandsTV, rotation="none")#
+#
+  fa.varimax <- GPForth.df(fa.unrotated, method = "varimax", normalize = TRUE)#
+  fa.cubimax <- cubimax(fa.unrotated, normalize = TRUE)#
+  fa.quartimax <- GPForth.df(fa.unrotated, method = "quartimax", normalize = TRUE)
+fa.cubimax <- cubimax.df(fa.unrotated, normalize = TRUE)
+fa.unrotated
+fa.varimax <- GPForth.df(loadings(fa.unrotated), method = "varimax", normalize = TRUE)#
+  fa.cubimax <- cubimax.df(loadings(fa.unrotated), normalize = TRUE)#
+  fa.quartimax <- GPForth.df(loadings(fa.unrotated), method = "quartimax", normalize = TRUE)
+cbind(loadings(fa.varimax), loadings(fa.cubimax), loadings(fa.quartimax))
+print(cbind(loadings(fa.varimax), loadings(fa.cubimax), loadings(fa.quartimax)), digits = 2)
+print(cbind(loadings(fa.varimax), loadings(fa.cubimax), loadings(fa.quartimax)), digits = 3)
+fa.varimax <- GPForth(loadings(fa.unrotated), method = "varimax", normalize = TRUE)#
+  fa.cubimax <- cubimax.df(loadings(fa.unrotated), normalize = TRUE)#
+  fa.quartimax <- GPForth(loadings(fa.unrotated), method = "quartimax", normalize = TRUE)
+print(cbind(loadings(fa.varimax), loadings(fa.cubimax), loadings(fa.quartimax)), digits = 2)
+data("WansbeekMeijer", package="GPArotation")#
+  fa.unrotated  <- factanal(factors = 3, covmat=NetherlandsTV, rotation="none")#
+  fa.varimax <- GPForth.df(loadings(fa.unrotated), method = "varimax", normalize = TRUE)#
+  fa.cubimax <- GPForth.df(loadings(fa.unrotated), method="cubimax", normalize = TRUE)#
+  fa.quartimax <- GPForth.df(loadings(fa.unrotated), method = "quartimax", normalize = TRUE)#
+  print(cbind(loadings(fa.varimax), loadings(fa.cubimax), loadings(fa.quartimax)), digits = 3)
+fa.unrotated  <- factanal(factors = 3, covmat=NetherlandsTV, rotation="none")#
+  fa.varimax <- Varimax(loadings(fa.unrotated), normalize = TRUE)#
+  fa.cubimax <- cubimax.df(loadings(fa.unrotated), normalize = TRUE)#
+  fa.quartimax <- quartimax(loadings(fa.unrotated), normalize = TRUE)#
+  print(cbind(loadings(fa.varimax), loadings(fa.cubimax), loadings(fa.quartimax)), digits = 3)
+fss
+ss
+fa.varimax <- GPForth.df(loadings(fa.unrotated), method = "varimax", normalize = TRUE)#
+  fa.cubimax <- cubimax.df(loadings(fa.unrotated), normalize = TRUE)#
+  fa.quartimax <- GPForth.df(loadings(fa.unrotated), method = "quartimax", normalize = TRUE)#
+  print(cbind(loadings(fa.varimax), loadings(fa.cubimax), loadings(fa.quartimax)), digits = 2)#
+  # Same result
+?quartimax
+cubimax
+cubimax.df
+?quartimax
+?oblimax
+cubimax.df
+ff.cubimax
+Harman8
+abs(Harman8)
+exp(abs(Harman8))
+log(abs(Harman8))
+?exp
+expm1(abs(Harman8))
+ff.expomax <- function(L)#
+  {#
+    f <- -sum(diag(expm1(abs(L))))#
+    list(f = f, Method = "DF-Cubimax")#
+  }
+ff.expomax
+GPForth.df(Harman8, method ="expomax")
+GPFoblq.df(Harman8, method ="expomax")
+GPForth.df(Harman8, method ="expomax")
+ls()
+L
+GPForth.df(L, method ="expomax")
+quartimax(L)
+detach("package:GPArotateDF", unload=TRUE)#
+install.packages("/Users/coen/Documents/Personal Research/cran/GPArotateDF_2022.12-1.tar.gz")#
+library(GPArotateDF)
+q()
+install.packages("/Users/coen/Documents/Personal Research/cran/GPArotateDF_2022.12-1.tar.gz")#
+library(GPArotateDF)
+?GPArotateDF
+ff.fss <- function(L, k = 2){#
+  m <- ncol(L)#
+  p <- nrow(L)#
+  zm <- m + k#
+  Imat <- matrix(0, p, m)#
+  for (j in 1:m)#
+    Imat[abs(L[,j]) <= sort(abs(L[,j]))[zm],j] <- 1#
+  for (i in 1:(m-1)){#
+    for (j in (i+1):m){#
+      nz <- sum(Imat[,i] + Imat[,j]==1)#
+      while (nz < zm && sum(Imat) < m * 2){#
+	    tbc <- c(abs(L[,i]), abs(L[,j]))#
+	    tbcs <- sort(tbc [c(Imat[,i], Imat[,j])==0])[1]#
+	    Imat[abs(L) == tbcs] <- 1#
+	    nz <- sum(Imat[,i] + Imat[,j]==1)#
+      }#
+    }#
+  }#
+  print(Imat)#
+  f <- sum(Imat*L^2)#
+  list(f = f,#
+  		Method = "DF-Forced Simple Structure")#
+}
+data(Thustone)
+data(Thurstone)
+data(Thurstone, package="GPArotation")
+ff.fss(box20, 2)
+ff.fss(box20, 20)
+ff.fss(box20, 3)
+sum(ff.fss(box20, 3))
+ff.fss <- function(L, k = 2){#
+  m <- ncol(L)#
+  p <- nrow(L)#
+  zm <- m + k#
+  Imat <- matrix(0, p, m)#
+  for (j in 1:m)#
+    Imat[abs(L[,j]) <= sort(abs(L[,j]))[zm],j] <- 1#
+  for (i in 1:(m-1)){#
+    for (j in (i+1):m){#
+      nz <- sum(Imat[,i] + Imat[,j]==1)#
+      while (nz < zm && sum(Imat) < m * 2){#
+	    tbc <- c(abs(L[,i]), abs(L[,j]))#
+	    tbcs <- sort(tbc [c(Imat[,i], Imat[,j])==0])[1]#
+	    Imat[abs(L) == tbcs] <- 1#
+	    nz <- sum(Imat[,i] + Imat[,j]==1)#
+      }#
+    }#
+  }#
+  f <- sum(Imat*L^2)#
+  list(Imat = Imat, f = f,#
+  		Method = "DF-Forced Simple Structure")#
+}
+ff.fss(box20, 3)
+ff.fss(box20, 2)
+sum(ff.fss(box20, 2)$Imat)
+sum(ff.fss(box20, 3)$Imat)
+sum(ff.fss(box20, 4)$Imat)
+sum(ff.fss(box20, 5)$Imat)
+sum(ff.fss(box20, 6)$Imat)
+sum(ff.fss(box20, 7)$Imat)
+sum(ff.fss(box20, 8)$Imat)
+sum(ff.fss(box20, 9)$Imat)
+sum(ff.fss(box20, 10)$Imat)
+sum(ff.fss(box20, 11)$Imat)
+sum(ff.fss(box20, 12)$Imat)
+sum(ff.fss(box20, 13)$Imat)
+sum(ff.fss(box20, 14)$Imat)
+sum(ff.fss(box20, 15)$Imat)
+sum(ff.fss(box20, 16)$Imat)
+sum(ff.fss(box20, 17)$Imat)
+sum(ff.fss(box20, 18)$Imat)
+ff.fss(box20, 16)$Imat
+ff.fss(box20, 6)$Imat
+ff.fss(box20, 1)$Imat
+sum(ff.fss(box20, 1)$Imat)
+sum(ff.fss(box20, 0)$Imat)
+(ff.fss(box20, 0)$Imat)
+box20
+(ff.fss(box20, 0)$Imat) * box20
+(ff.fss(box20, 1)$Imat) * box20
+(ff.fss(box20, 2)$Imat) * box20
+(ff.fss(box20, 2)$Imat)
+(ff.fss(box20, 1)$Imat)
+ff.fss <- function(L, k = 2){#
+  m <- ncol(L)#
+  p <- nrow(L)#
+  zm <- m + k#
+  Imat <- matrix(0, p, m)#
+  for (j in 1:m)#
+    Imat[abs(L[,j]) <= sort(abs(L[,j]))[zm],j] <- 1#
+  for (i in 1:(m-1)){#
+    for (j in (i+1):m){#
+      nz <- sum(Imat[,i] + Imat[,j]==1)#
+      while (nz < zm && sum(Imat[ ,c(i,j)]) < m * 2){#
+	    tbc <- c(abs(L[,i]), abs(L[,j]))#
+	    tbcs <- sort(tbc [c(Imat[,i], Imat[,j])==0])[1]#
+	    Imat[abs(L) == tbcs] <- 1#
+	    nz <- sum(Imat[,i] + Imat[,j]==1)#
+      }#
+    }#
+  }#
+  f <- sum(Imat*L^2)#
+  list(Imat = Imat, f = f,#
+  		Method = "DF-Forced Simple Structure")#
+}
+(ff.fss(box20, 2)$Imat)
+(ff.fss(box20, 3)$Imat)
+(ff.fss(box20, 17)$Imat)
+(ff.fss(box20, 18)$Imat)
+ffsQ.df(box20)
+fssQ.df(box20)
+fssQ.df(box20, k= 5)
+fssQ.df(box20, k= 0)
+fssQ.df(box20, k= 17)
+fssQ.df(box20, k= 1)
+fssQ.df(box20, k= 18)
+(ff.fss(box20, 18)$Imat)
+(ff.fss(box20, 0)$Imat)
+(ff.fss(box20, 1)$Imat)
+factanal(factors = 4, covmat = ability.cov)
+?ability.cov
+data(WansbeekMeijer, package="GPArotation")
+factanal(factors=4, covmat = WansbeekMeijer)
+?WansbeekMeijer
+factanal(factors=4, covmat = "Netherlands")
+factanal(factors=4, covmat = "NetherlandsTV")
+NetherlandsTV
+?GPArotation
+factanal(factors=4, covmat = NetherlandsTV)
+factanal(factors=3, covmat = NetherlandsTV)
+library(psych)
+?psych
+factanal(factors=3, covmat = Holzinger)
+factanal(factors=5, covmat = Holzinger)
+z <- factanal(factors=5, covmat = Holzinger)$loadings
+(ff.fss(z, 0)$Imat)
+(ff.fss(z, 09)$Imat)
+(ff.fss(z, 10)$Imat)
+sum((ff.fss(z, 0)$Imat))
+sum((ff.fss(z, 1)$Imat))
+q()
+q()
