@@ -103,20 +103,22 @@ in the actual function call. The \code{ff.*} function call
 }
 \examples{
   # GPRSorth and rotation name 
-  data("Harman", package="GPArotation")
-  GPForth.df(Harman8, method="quartimax")
-  GPForth.df(Harman8, method="cubimax")
-  GPForth.df(Harman8, method="varimax")
-  GPFoblq.df(Harman8, method="quartimin")
+  data("Harman", package = "GPArotation")
+  GPForth.df(Harman8, method = "quartimax")
+  GPForth.df(Harman8, method = "cubimax")
+  GPForth.df(Harman8, method = "varimax")
+  GPFoblq.df(Harman8, method = "quartimin")
 
   # displaying results of factor analysis rotation output
+  origdigits <- options("digits")
   Abor.unrotated <- factanal(factors = 2, covmat = ability.cov, rotation = "none")
   Abor <- GPFoblq.df(loadings(Abor.unrotated), method = "quartimin")
   Abor
   print(Abor)
-  print(Abor, Table=TRUE)
-  print(Abor, digits=2)
+  print(Abor, Table = TRUE)
+  print(Abor, digits = 2)
   summary(Abor)
+  options(digits = origdigits$digits)
   }
 \author{Coen A. Bernaards and Robert I. Jennrich
 		with some R modifications by Paul Gilbert.}
